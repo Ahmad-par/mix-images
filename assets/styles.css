@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/Vazir.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2rem;
+    user-select: none;
+}
+
+/* #wrapper{
+    padding: 2rem 1rem;
+    border: 1px solid black;
+}  */
+
+/* #boxes-wrapper{
+    border: 1px solid black;
+    padding: 2rem 1rem;
+} */
+
+.boxes-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article{
+    width: 25%;
+    min-width: 350px;
+    height: 400px;
+    padding: 2rem .5rem 1rem;
+    text-align: center;
+    box-shadow: 1px 1px 2rem 1px grey;
+    margin-bottom: 20px;
+    margin-top: 3rem;
+    border-radius: 20px;
+
+}
+
+#final-wrapper{
+    margin: 3rem auto;
+    width: 640px;
+    height: 480px;
+    box-shadow: 1px 1px 1rem rgb(228, 148, 168);
+}
+
+h3{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: Vazir;
+    font-size: 17pt;
+    color: gray;
+}
+
+.final-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.border canvas{
+    border: 1px solid rgb(228, 148, 168);
+}
+
+.border canvas:hover{
+    border-width: 2px;
+}
+
+input[type=file]::file-selector-button{
+    margin-left: 20px;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+input[type=file]::file-selector-button:hover{
+    background-color: lightpink;
+}
+
+input[type=hidden] ~ button{
+    margin-top: 10px; 
+    padding: .3rem;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-family: Vazir;
+    cursor: pointer;
+}
+
+input[type=hidden] ~ button:hover{
+    background-color: lightpink;
+}
+
+.preview-wrapper{
+    margin: 1rem auto;
+}
+
+.preview-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.preview-row canvas{
+    margin: 1px;
+    border: 1px solid lightgray;
+}
+
+.preview-row canvas:hover{
+    border-width: 2px;
+}
+
+article.add-photo {
+    padding: 3rem 1rem 1rem;
+}
+
+#plus-sign{
+    font-size: 55pt;
+    cursor: pointer;
+}
+
+#plus-sign ~ p{
+    font-family: Vazir;
+}
+
+.description{
+    text-align: right;
+    font-family: Vazir;
+    font-size: 11pt;
+    padding: 1rem 1rem;
+    color: gray;
+}
+
+article > button {
+    font-family: Vazir;
+    padding: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    font-size: 11pt;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+article > button:hover{
+    background-color: rgb(228, 148, 168);
+}
+
+#control-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#control-buttons button{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    font-family: Vazir;
+    font-size: 14pt;
+    margin: 1rem 2rem;
+    cursor: pointer;
+    border-color: rgb(228, 148, 168);
+}
+
+#control-buttons button:hover{
+    background-color: rgb(228, 148, 168);
+}

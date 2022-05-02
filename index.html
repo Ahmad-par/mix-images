@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Upload your photos and do some simple collage with them"/>
+        <title>عکس مخلوط کن</title>
+        <link rel="stylesheet" href="/styles.css"/>
+        <script src="/script.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <section id="boxes-wrapper">
+                <div id="boxrow1" class="boxes-row">
+                    <article id="box1" version="0">
+                        <form method="POST" action="/upload-image" enctype="multipart/form-data">
+                            <input type="file" name="image" accept="image/*"/><br/>
+                            <input type="hidden" name="hidden"/>
+                        </form>
+                        <div class="preview-wrapper">
+                            <div class="preview-row"></div>
+                            <div class="preview-row"></div>
+                            <div class="preview-row"></div>
+                            <div class="description">
+                                <p>عکس مورد نظر را در این قسمت انتخاب کنید</p>
+                                <p>حجم فایل انتخابی نباید بیشتر از ۴ مگابایت باشد</p>
+                                <p>پس از انتخاب فایل و بارگزاری آن عکس مورد نظر در ۱۲ قسمت مساوی جدا از هم نمایش داده میشود که میتوانید هر قسمت را به عکس نهایی منتقل کنید </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="box2" version="0">
+                        <form method="POST" action="/upload-image" enctype="multipart/form-data">
+                            <input type="file" name="image" accept="image/*"/><br/>
+                            <input type="hidden" name="hidden"/>
+                        </form>
+                        <div class="preview-wrapper">
+                            <div class="preview-row"></div>
+                            <div class="preview-row"></div>
+                            <div class="preview-row"></div>
+                            <div class="description">
+                                <p>عکس مورد نظر را در این قسمت انتخاب کنید</p>
+                                <p>حجم فایل انتخابی نباید بیشتر از ۴ مگابایت باشد</p>
+                                <p>پس از انتخاب فایل و بارگزاری آن عکس مورد نظر در ۱۲ قسمت مساوی جدا از هم نمایش داده میشود که میتوانید هر قسمت را به عکس نهایی منتقل کنید </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="add-photo">
+                            <p id="plus-sign">+</p>
+                            <p>افزودن عکس جدید</p>
+                    </article>
+                </div>
+                <section>
+                    <h3>:قطعات عکس های بالا را به این بخش منتقل کرده و با هم ترکیب کنید</h3>
+                    <div id="final-wrapper">
+                      <div class="final-row border"></div>
+                      <div class="final-row border"></div>
+                      <div class="final-row border"></div>
+                      <div class="final-row border"></div>
+                      <div class="final-row border"></div>
+                      <div class="final-row border"></div>
+                    </div>
+                    <div id="control-buttons">
+                        <button id="borderless" title="با کلیک روی این دکمه جابجایی قطعات غیر فعال میشود">برداشتن حاشیه ها</button>
+                        <button id="delete-parts">پاک کردن قطعات</button>
+                    </div>
+                </section>
+                <div id="boxrow2" class="boxes-row">
+        
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
