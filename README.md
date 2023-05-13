@@ -12,4 +12,4 @@ If you want to serve this app on a local server you should change "serverAddress
 
 You can go to this address to see a simpler version of this app with four boxes:
 
-           https://pacific-garden-98866.herokuapp.com
+           https://designwithcode.ir/other/collage
